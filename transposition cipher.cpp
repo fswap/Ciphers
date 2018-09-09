@@ -9,10 +9,7 @@ int main()
     cout<<"Enter the key text:\n";
     cin>>k;
     int t=0,col=k.length(),row,z;
-    if(s.length()%col)
-        row=s.length()/col +1;
-    else
-        row=s.length()/col;
+    row=(s.length()%col)?s.length()/col +1:s.length();
     for(i=s.length();i<row*col;i++)
         s[i]='_';
     char a[row][col];
